@@ -1,7 +1,7 @@
 {
   "name": "ics-attendance-checker",
   "private": true,
-  "scripts": { "dev": "next dev", "build": "next build", "start": "next start", "lint": "next lint" },
+  "scripts": { "dev": "next dev", "build": "prisma generate && next build", "postinstall": "prisma generate", "start": "next start", "lint": "next lint" },
   "dependencies": {
     "@ducanh2912/next-pwa": "^10.2.9",
     "@prisma/client": "^5.22.0",
